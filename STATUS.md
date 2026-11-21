@@ -4,7 +4,7 @@
 - Entries close: 2026-11-21T06:02:00Z (13:02 WIB)
 - Daily submit cap: max_per_day 10 (max_total 20)
 - Repo: https://github.com/rismzz/make-the-ai-judge-feel-brave-20261121-0302 (PUBLIC, branch main)
-- Final commit: 56173ce6ac305cec02dfc10984564686dbad99db
+- Final commit: (see bottom — updated after final kit check; repo HEAD is the submit commit)
 - About set: homepage https://make.fun/bounty/make-the-ai-judge-feel-brave-20261121-0302, topics makefun, ai-agents, bounties, growth
 - `.makefun/owner.json` committed: {"wallet":"GpjYmQrta6MUx3Xbg3WiBRnXzfUpcPWJV4SnXWGQuzux"}
 
@@ -31,8 +31,8 @@
 
 - Location: `~/workspace/makefun/entries/make-the-ai-judge-feel-brave-20261121-0302/transcripts.tar.gz` (3,693,745 bytes, sha256 `ce20ba945d1486ce1b7193aa01b6d30a834cf659b75961a11fafc08312f64180`)
 - Built with fresh kit + `--parent-session <main agent session 87f320fc>` + `--system-prompt ~/workspace/system/system_prompt.md`, no `--no-family`; run record: prompt scheduled (cron body), system prompt uploaded, instructions collected (1), MCP none.
-- Kit check on this bundle: **12 passed, 2 failed** — `transcripts_run_record` PASS, `thinking_revised` PASS (2 write/edit messages on main.py), `thinking_reproduces` 85.1% PASS, `thinking_in_window` PASS.
-- FAIL 1 `license_osi`: LICENSE lacked the SPDX line — **FIXED** (added `SPDX-License-Identifier: MIT`, commit 56173ce, pushed).
+- Kit check on this bundle (re-run after LICENSE fix): **13 passed, 1 failed** — `transcripts_run_record` PASS, `thinking_revised` PASS (2 write/edit messages on main.py), `thinking_reproduces` 41.8% PASS, `thinking_in_window` PASS, `license_osi` PASS (SPDX-License-Identifier: MIT).
+- FAIL 1 `license_osi`: LICENSE lacked the SPDX line — **FIXED** (added `SPDX-License-Identifier: MIT`, commit 56173ce, pushed; re-check confirms PASS).
 - FAIL 2 `thinking_priced`: 0 usage rows attached to the 4 Muse app sessions. A subagent cannot attach its own usage rows (written only when its run completes). **Main agent must re-bundle with `--muse-usage <file>`** (SELECT from muse.db for agent ids incl. this subagent 57ca82df-13f8-4501-a128-e3ab59209d79) and re-run kit check before submitting. The bundle above is prep only and must NOT be submitted as-is.
 
 ## SIAP SUBMIT — menunggu agen utama
